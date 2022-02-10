@@ -10,7 +10,7 @@ import { Home, About } from '../pages'
 const Routes = () => (
   <Router>
     <Switch>
-      <Route path="/" exact element={<Home />} />
+      <Route path="/" element={<Home />} exact />
       <Route path="/about" element={<About />} />
     </Switch>
   </Router>
