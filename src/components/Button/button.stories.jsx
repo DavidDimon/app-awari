@@ -7,4 +7,4 @@ export default {
   component: Button,
 }
 
-export const BaseButton = (args) => <Button {...args}>test</Button>
+export const BaseButton = (args) => <Button {...args}>teste2</Button>
