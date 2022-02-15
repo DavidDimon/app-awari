@@ -1,17 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-import { Header } from '../../components'
+import { Header, Footer } from '@components'
+import { Main } from './styles'
 
 const headerItems = ['Home', 'Pokedex', 'Guides']
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header headerItems={headerItems} />
-      {/* <p>Home</p>
-      <Link to="/about">{'About'}</Link> */}
-    </div>
+      <Main>
+        <Footer />
+      </Main>
+    </React.Fragment>
   )
 }
 
