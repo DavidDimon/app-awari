@@ -17,4 +17,9 @@ code {
     monospace;
 }
 
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
 `

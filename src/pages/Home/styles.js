@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
-export const Main = styled.main`
-  height: 100%;
+export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  height: 100%;
+`
+
+export const ListWrapper = styled.div`
+  min-height: 50rem;
+  width: 100%;
 `

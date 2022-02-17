@@ -1,18 +1,16 @@
 import React from 'react'
 
-import { Header, Footer } from '@components'
-import { Main } from './styles'
-
-const headerItems = ['Home', 'Pokedex', 'Guides']
+import { SideMenu } from '@components'
+import { Container, ListWrapper } from './styles'
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <Header headerItems={headerItems} />
-      <Main>
-        <Footer />
-      </Main>
-    </React.Fragment>
+    <Container>
+      <SideMenu>
+        <span>test</span>
+      </SideMenu>
+      <ListWrapper />
+    </Container>
   )
 }
 
