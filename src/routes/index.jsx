@@ -6,25 +6,12 @@ import { Home, About } from '../pages'
 
 const Routes = () => (
   <BrowserRouter>
-    <Switch>
-      <Route
-        path="/"
-        element={
-          <Layout>
-            <Home />
-          </Layout>
-        }
-        exact
-      />
-      <Route
-        path="/about"
-        element={
-          <Layout>
-            <About />
-          </Layout>
-        }
-      />
-    </Switch>
+    <Layout>
+      <Switch>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/about" element={<About />} />
+      </Switch>
+    </Layout>
   </BrowserRouter>
 )
 
