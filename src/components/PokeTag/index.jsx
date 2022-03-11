@@ -8,8 +8,8 @@ const PokeTag = ({ type }) => {
   const pokeType = React.useMemo(() => POKE_TYPES[type], [type])
 
   return (
-    <Container color={pokeType.color}>
-      {pokeType.icon({ fill: 'red' })}
+    <Container color={pokeType?.color || '#000'}>
+      {/* {pokeType?.icon ? pokeType?.icon({ fill: 'red' }) : ''} */}
       {type}
     </Container>
   )

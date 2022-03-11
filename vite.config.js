@@ -13,6 +13,7 @@ export default defineConfig({
       '@src': path.resolve(__dirname, './src'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@constants': path.resolve(__dirname, './src/constants'),
+      '@types': path.resolve(__dirname, './src/@types'),
     },
   },
   server: { port: 4000 },
